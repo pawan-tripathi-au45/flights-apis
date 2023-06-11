@@ -15,7 +15,7 @@ const FlightPrices = () => {
   const fetchFlightPrices = async () => {
     // ...fetch flight prices logic...
         try {
-      const response = await fetch(`http://localhost:4000/flights?source=${source}&destination=${destination}&date=${date}`);
+      const response = await fetch(`https://apis-flight.onrender.com/flights?source=${source}&destination=${destination}&date=${date}`);
 
       if (response.ok) {
         const data = await response.json();
